@@ -1,69 +1,8 @@
 digraph G {
-	start = true;
-	dimen = 3;
-	sep="+20";
-	overlap = false;
-	center = true;
-	splines = true;
-	concentrate = true;
-
-	/* Domination Cycle*/
-	edge[color = "firebrick4", len = 0.1]
-	Fighting -> Rock;
-	Fighting -> Dark;
-	Flying -> Fighting;
-	Poison -> Grass;
-	Ground -> Poison;
-	Rock -> Flying;
-	Rock -> Fire;
-	Steel -> Rock;
-	Fire -> Steel;
-	Fire -> Grass;
-	Water -> Fire;
-	Grass -> Ground;
-	Grass -> Water;
-	Psychic -> Fighting;
-	Dark -> Psychic;
-
-	/* Dominates */
-	edge[color = "black", len = 2]
-	Poison -> Fairy
-	Flying -> Bug
-	Flying -> Grass
-	Ground -> Rock
-	Ground -> Electric
-	Bug -> Grass
-	Steel -> Ice
-	Steel -> Fairy
-	Fire -> Bug
-	Fire -> Ice
-	Electic -> Flying
-	Dark -> Ghost
-	Fairy -> Fighting
-	Fairy -> Dragon
-	Fairy -> Dark
-
-	/* Strong Against */
-	edge[style=dashed, len=2]
-	Fighting -> Normal;
-	Fighting -> Steel;
-	Fighting -> Ice;
-	Ground -> Steel;
-	Ground -> Fire;
-	Rock -> Bug;
-	Rock -> Ice;
-	Bug -> Psychic;
-	Bug -> Dark;
-	Ghost -> Ghost;
-	Ghost -> Psychic;
-	Water -> Ground;
-	Water -> Rock;
-	Grass -> Rock;
-	Electric -> Water;
-	Psychic -> Poison;
-	Ice -> Flying;
-	Ice -> Rock;
-	Ice -> Grass;
-	Ice -> Dragon;
-	Dragon -> Dragon;
+	A -> B
+	A -> C
+	B -> C
+	B -> D
+	C -> D
+	D -> A
 }
