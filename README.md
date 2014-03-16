@@ -37,7 +37,7 @@ The higher the percentage, the more likely it is that any chain of relationships
 The "verbose" version of the command will show you all the steps leading up to the final result. It is *quite* verbose, so be ready for lots of text.
 
 The "-dot" version of the command won't output percentages to the screen. Instead, it will create a new version of your input file (with ".ranked" appended to the file name), and adds the percentages to the names of the nodes. For example:
-```
+```DOT
 pokemon.gv
 digraph G {
 	start = true;
@@ -110,7 +110,7 @@ digraph G {
 }
 ```
 becomes:
-```
+```DOT
 pokemon.gv.ranked
 digraph G {
 	Fighting [label = "Fighting: 5.93%"]
