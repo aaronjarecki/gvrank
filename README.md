@@ -1,15 +1,15 @@
 #GvRank
 
 ##Usage
-gvrank <inputfile>
+`gvrank <inputfile>`
 
 or 
 
-gvrank <inputfile> verbose
+`gvrank <inputfile> verbose`
 
 or 
 
-gvrank <inputfile> -dot
+`gvrank <inputfile> -dot`
 
 The first version of the command will return output that looks like this:
 ```
